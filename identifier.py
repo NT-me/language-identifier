@@ -1,13 +1,19 @@
 import random as ran
 
+# constantes
+
+EXCLU = 2
+NOEXCLU = 1
+
+
 def identifier(string, nb):
     """
     Return FR, EN or ??
     """
 
     # Récupération des dico
-    fileEN = open("dict/EN.txt",'r')
-    fileFR = open("dict/FR.txt",'r')
+    fileEN = open("dict/EN.txt", 'r')
+    fileFR = open("dict/FR.txt", 'r')
     contentEN = fileEN.read()
     contentFR = fileFR.read()
     dict_EN = contentEN.split("\n")
@@ -19,20 +25,31 @@ def identifier(string, nb):
     input_lexe = string.split(" ")
 
     # On choisis nb mot au piffe dedans
-    wordList = list()
+    wordList = set()
     for i in range(0, nb):
-        wordList.append(ran.choice(input_lexe).replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace(";", ""))
+        wordList.add(ran.choice(input_lexe).replace("?", "").replace("!", "").replace(".", "").replace(",", "").replace(";", ""))
 
     note_EN = 0
     note_FR = 0
 
     # Si un mot est trouvé dans un des disco la note de la langue augmente
     for word in wordList:
+        flag_EN = 0
+        flag_FR = 0
         if word in dict_EN:
-            note_EN += 1
+            flag_EN = 1
 
         if word in dict_FR:
-            note_FR += 1
+            flag_FR = 1
+
+        if flag_EN ^ flag_FR:  # Si il existe que dans UN seul des dico il prend 2
+            if flag_EN:
+                note_EN += EXCLU
+            elif flag_FR:
+                note_FR += EXCLU
+        elif flag_EN and flag_FR:  # S'il existe dans 2 il prend que un
+            note_EN += NOEXCLU
+            note_FR += NOEXCLU
 
     print("Note FR : " + str(note_FR))
     print("Note EN : " + str(note_EN))
