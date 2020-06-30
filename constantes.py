@@ -1,0 +1,2 @@
+NB_WORD = 15
+NB_ITER = 500

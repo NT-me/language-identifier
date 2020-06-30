@@ -5,21 +5,22 @@ import random as ran
 EXCLU = 2
 NOEXCLU = 1
 
+# Récupération des dico
+fileEN = open("dict/EN.txt", 'r')
+fileFR = open("dict/FR.txt", 'r')
+contentEN = fileEN.read()
+contentFR = fileFR.read()
+fileEN.close()
+fileFR.close()
+dict_EN = contentEN.split("\n")
+dict_FR = contentFR.split("\n")
+
 
 def identifier(string, nb):
     """
     Return FR, EN or ??
     """
-
-    # Récupération des dico
-    fileEN = open("dict/EN.txt", 'r')
-    fileFR = open("dict/FR.txt", 'r')
-    contentEN = fileEN.read()
-    contentFR = fileFR.read()
-    dict_EN = contentEN.split("\n")
-    dict_FR = contentFR.split("\n")
-
-    print("Langues chargées : FR, EN")
+    # print("Langues chargées : FR, EN")
 
     # On découpe l'entrée en lexem utilisable
     input_lexe = string.split(" ")
@@ -51,8 +52,8 @@ def identifier(string, nb):
             note_EN += NOEXCLU
             note_FR += NOEXCLU
 
-    print("Note FR : " + str(note_FR))
-    print("Note EN : " + str(note_EN))
+    # print("Note FR : " + str(note_FR))
+    # print("Note EN : " + str(note_EN))
 
     if note_FR > note_EN:
         return 'FR'
