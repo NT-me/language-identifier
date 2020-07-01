@@ -24,6 +24,8 @@ def identifier(string, nb):
 
     # On découpe l'entrée en lexem utilisable
     input_lexe = string.split(" ")
+    if nb > len(input_lexe):
+        nb = len(input_lexe)
 
     # On choisis nb mot au piffe dedans
     wordList = set()
