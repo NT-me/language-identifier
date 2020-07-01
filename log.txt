@@ -36,3 +36,9 @@ NB_WORD 500
 NB_WORD 15
 NB_WORD 500
 {'pg29666.txt': {'EN': 500, 'FR': 0, '??': 0}}
+NB_WORD 15
+NB_ITER 50
+{'pg29666.txt': {'EN': 50, 'FR': 0, '??': 0}}
+NB_WORD 15
+NB_ITER 50
+{'Douze ans de séjour dans la Haute-Éthiopie.txt': {'EN': 0, 'FR': 49, '??': 1}, 'Hymns and Hymnwriters of Denmark.txt': {'EN': 50, 'FR': 0, '??': 0}}

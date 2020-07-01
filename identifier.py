@@ -1,9 +1,9 @@
 import random as ran
-
+import constantes
 # constantes
 
-EXCLU = 2
-NOEXCLU = 1
+EXCLU = constantes.EXCLU
+NOEXCLU = constantes.NOEXCLU
 
 # Récupération des dico
 fileEN = open("dict/EN.txt", 'r')

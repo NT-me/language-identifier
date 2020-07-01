@@ -23,3 +23,5 @@ Dict are from :
 
 For French : http://infolingu.univ-mlv.fr/ under LGPLLR licence
 For english : https://github.com/dwyl/english-words/ under no licence
+
+Texts are from gutenberg.org
