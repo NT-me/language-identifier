@@ -42,3 +42,15 @@ NB_ITER 50
 NB_WORD 15
 NB_ITER 50
 {'Douze ans de séjour dans la Haute-Éthiopie.txt': {'EN': 0, 'FR': 49, '??': 1}, 'Hymns and Hymnwriters of Denmark.txt': {'EN': 50, 'FR': 0, '??': 0}}
+NB_WORD 15
+NB_ITER 2
+{'Douze ans de séjour dans la Haute-Éthiopie.txt': {'EN': 0, 'FR': 2, '??': 0}, 'yt_title.txt': {'EN': 0, 'FR': 2, '??': 0}, 'Hymns and Hymnwriters of Denmark.txt': {'EN': 2, 'FR': 0, '??': 0}}
+NB_WORD 15
+NB_ITER 2
+{'Douze ans de séjour dans la Haute-Éthiopie.txt': {'EN': 0, 'FR': 2, '??': 0}, 'yt_title.txt': {'EN': 0, 'FR': 2, '??': 0}, 'Hymns and Hymnwriters of Denmark.txt': {'EN': 2, 'FR': 0, '??': 0}}
+NB_WORD 15
+NB_ITER 2
+{'Douze ans de séjour dans la Haute-Éthiopie.txt': {'EN': 0, 'FR': 2, '??': 0}, 'yt_title.txt': {'EN': 0, 'FR': 0, '??': 2}, 'Hymns and Hymnwriters of Denmark.txt': {'EN': 2, 'FR': 0, '??': 0}}
+NB_WORD 15
+NB_ITER 2
+{'Douze ans de séjour dans la Haute-Éthiopie.txt': {'EN': 0, 'FR': 2, '??': 0}, 'yt_title.txt': {'EN': 0, 'FR': 1, '??': 1}, 'Hymns and Hymnwriters of Denmark.txt': {'EN': 2, 'FR': 0, '??': 0}}

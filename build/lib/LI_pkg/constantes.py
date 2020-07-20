@@ -1,0 +1,5 @@
+NB_WORD = 15
+NB_ITER = 2
+
+EXCLU = 2
+NOEXCLU = 1

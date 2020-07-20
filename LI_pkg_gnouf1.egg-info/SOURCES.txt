@@ -1,0 +1,11 @@
+README.md
+setup.py
+LI_pkg/__init__.py
+LI_pkg/constantes.py
+LI_pkg/identifier.py
+LI_pkg/main.py
+LI_pkg/speedtest.py
+LI_pkg_gnouf1.egg-info/PKG-INFO
+LI_pkg_gnouf1.egg-info/SOURCES.txt
+LI_pkg_gnouf1.egg-info/dependency_links.txt
+LI_pkg_gnouf1.egg-info/top_level.txt
